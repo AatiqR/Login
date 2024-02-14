@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style type="text/Css">
+   *{
+    padding: 0; margin: 0;
+   }
+   body{
+        background-image: url(img.jpg);
+        
+    }
+    .box{
+        width: 300px; height: 380px;
+        border-radius: 20px;
+        position: relative; left: 460px; bottom: -100px; 
+        background-color: transparent;
+        color: aliceblue;
+        backdrop-filter: blur;
+        border: 10px solid rgb(255, 255,255, .10);
+        box-shadow: 0 0 10px rgba(0,0, 0, .2);
+        border: none; outline: none;
+    }
+ h2{
+    position: absolute; left: 95px; top: 70px;
+    font-size: 40px;  
+ }
+ .email{  
+    position: relative;top: 150px; left: 29px;
+    padding: 6px 0px; width:80%; margin: 7px 0px;
+    border-top: 0; border-left: 0; border-right: 0;
+    outline: none ; border-bottom: 1px solid black;
+    background: transparent; color: rgb(0, 0, 0);
+ }
+ .checkbox{
+position: absolute; top: 230px; right: 257px;
+ }
+span{
+    position: absolute; top: 228px; left: 45px;
+}
+.btn{
+    width: 65%; padding: 10px 30px; cursor: pointer; display: block;
+    margin: auto; background: linear-gradient(to right, #00d1fa,#eeff00);
+    border: 0; outline: none; position: absolute; top: 258px; left: 50px;
+    border-radius: 30px; font-weight: bolder;
+  }
+.nav{
+    height: 50px;
+    position: sticky;
+    padding: 0%; margin: 0; top: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding:  0 20px ;
+    font-size: 18px; background-color: cyan;
+}
+.menu{
+    display: flex; list-style: none; gap: 4rem;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: black; font-weight: 900;
+}
+.h3{
+    font-size: 24px;
+    margin-top: 8px;
+    letter-spacing: 10px;
+    color: black;
+
+}
+
+
+ 
+ </style>
+</head>
+<body>
+    <nav class="nav">
+    <h3 class="h3"> Mind Matrix </h3> 
+    <ul class="menu">
+     <li class="item"> <a href="#">Home</a></li>   
+     <li class="item"> <a href="#">Tools</a></li>   
+     <li class="item"> <a href="#">Class</a></li>   
+     <li class="item"> <a href="#">Course</a></li>   
+     <li class="item"> <a href="#">Contact</a></li>   
+
+    </ul>   
+    </nav>
+    <div class="box">
+        <div>
+        <h2>Login</h2>
+        </div>
+        <div>
+            <form class="form">
+                <input class="email" type="email" placeholder="E-mail" required>
+                <input class="email" type="password" placeholder="Password" required>
+                <input type="checkbox" class="checkbox"><span> Remember Me</span>
+                <button input="submit" class="btn" > Login </button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
